@@ -25,6 +25,6 @@ CREATE TABLE finance (
 
 
 
--- UPDATE tblstudent
+-- UPDATE student
 -- SET StudentName = 'Nelson'
 -- WHERE StudentID = 26;
