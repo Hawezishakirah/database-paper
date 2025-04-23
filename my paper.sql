@@ -1,27 +1,27 @@
 
-CREATE TABLE tblFinance (
+CREATE TABLE finance (
     StudentID INT PRIMARY KEY,
-    Tuition_Fee DECIMAL(10, 2),
-    Administration_Fee DECIMAL(10, 2),
-    Exams_Fee DECIMAL(10, 2),
-    Medical_Fee DECIMAL(10, 2)
+    Tuition_Fee DECIMAL(40, 1),
+    Administration_Fee DECIMAL(30, 1),
+    Exams_Fee DECIMAL(20, 1),
+    Medical_Fee DECIMAL(50, 1)
 );
 
 
 
-SELECT s.StudentName, f.Tuition_Fee
-FROM tblstudent s
-JOIN tblFinance f ON s.StudentID = f.StudentID
-WHERE s.Year = 'Y1S1';
+-- SELECT StudentName, Tuition_Fee
+-- FROM student 
+-- JOIN finance  ON StudentID = StudentID
+-- WHERE Year = 'Y1S1';
 
 
-SELECT s.StudentName, s.StudentID, s.Year, f.Tuition_Fee
-FROM tblstudent s
-JOIN tblFinance f ON s.StudentID = f.StudentID
-WHERE f.Tuition_Fee >= 30000;
+-- SELECT StudentName, StudentID, Year, Tuition_Fee
+-- FROM student 
+-- JOIN finance  ON StudentID = StudentID
+-- WHERE Tuition_Fee >= 30000;
 
-INSERT INTO tblstudent (StudentName, StudentID, Birthdate, Year, MobileNo)
-VALUES ('Dan', NULL, '2001-04-20', 'Y1S2', '0723456123');
+-- INSERT INTO student (StudentName, StudentID, Birthdate, Year, MobileNo)
+-- VALUES ('Dan', NULL, '2001-04-20', 'Y1S2', '0723456123');
 
 
 
