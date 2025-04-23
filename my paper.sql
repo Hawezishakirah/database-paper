@@ -25,6 +25,6 @@ CREATE TABLE finance (
 
 
 
-UPDATE tblstudent
-SET StudentName = 'Nelson'
-WHERE StudentID = 26;
+-- UPDATE tblstudent
+-- SET StudentName = 'Nelson'
+-- WHERE StudentID = 26;
